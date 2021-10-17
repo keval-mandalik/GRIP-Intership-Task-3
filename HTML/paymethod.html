@@ -13,17 +13,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="CSS/style.css"> -->
-    <title>Hello, world!</title>
+    <!-- <link rel="stylesheet" href="/CSS/style.css"> -->
     <style>
-      *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Baloo Bhai 2', cursive;
-      }
-
-      body::before{
-          background: url('Image/bg5.jpg') no-repeat center center/cover;
+        *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Baloo Bhai 2', cursive;
+        }
+        body::before {
+          background: url('Image/bg6.jpg') no-repeat center center/cover;
           content: '';
           position: absolute;
           top: 0;
@@ -32,70 +30,62 @@
           width: 100%;
           z-index: -1;
           opacity: 0.8;
+    
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: white;
+        }
+        .container-fluid h1{
+            color: white;
+            margin: 0 20px;
+        }
+        .nav-item{
+            margin: 0px 10px;
+            padding: 0px 10px;
+            background-color: #ac212f;
+            border-radius: 10px;
+        }
+
+        #donate_nav{
+            background-color: #ac212f;
+            padding: 8px 20px;
+        }
+        .active{
+            font-weight: bold;
+        }
+        .nav-link {
+            color: #e2c4c7;
+        }
+        .nav-link:hover {
+            color: #ffffff;
+            transform: translateY(-4px);
+        }
+        a{
+            color: white;
+        }
+        #mydiv > .btn-secondary {
+        background:transparent;
+        border: 4px solid #dc3545;
+        border-radius: 10px;
+        }
+        .dropdown{
+            display: block;
+            width: 16%;
+            margin: 4% auto;
+        }
+        .dropdown-menu{
+          background: transparent;
+          border: 2px solid #dc3545;
           
-      }
-      a{
-          text-decoration: none;
-      }
-      a:hover{
+        }
+        .dropdown-menu li a{
           color: white;
-      }
-      .container-fluid h1{
-          color: white;
-          margin: 0 20px;
-      }
-      .nav-item{
-          margin: 0px 10px;
-          padding: 0px 10px;
-          background-color: #ac212f;
-          border-radius: 10px;
-      }
-
-      #donate_nav{
-          background-color: #ac212f;
-          padding: 8px 20px;
-      }
-      .active{
-          font-weight: bold;
-      }
-      .nav-link {
-          color: #e2c4c7;
-      }
-      .nav-link:hover {
-          color: #ffffff;
-          transform: translateY(-4px);
-      }
-      a{
-          color: white;
-      }
-
-      .heading{
-          display: block;
-          width: 100%;
-          margin: 10% auto;
-      }
-      .heading h1{
-          font-size: 60px;
-          text-align: center;
-          color: white;
-          font-family: 'Anton', sans-serif;
-      }
-      .heading h5{
-          display: block;
-          margin: 15px auto;
-          width: 50%;
-          text-align: center;
-          color: white;
-          font-family: '', cursive;
-      }
-
-      #donate{
-          display: block;
-          width: 20%;
-          margin: 20px auto;
-          font-size: larger;
-      }
-    </style>
+        }
+      </style>
+    <title>Hello, world!</title>
   </head>
   <body>
 
@@ -125,15 +115,18 @@
           </div>
         </div>
       </nav>
+      <div id="mydiv" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+         Select Payment Method
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="HTML/debit.html">Debit Card</a></li>
+          <li><a class="dropdown-item" href="HTML/upi.html">UPI</a></li>
+          <li><a class="dropdown-item" href="HTML/net_banking.html">Net Banking</a></li>
+        </ul>
+      </div>
 
-      <section class="header">
-        <div class="heading">
-          <h1>A Little effort make a huge difference</h1>
-          <h5>We know only too well that what we are doing is nothing more than a drop in the ocean. But if the drop were not there, the ocean would be missing something.</h5>
-         <a href="HTML/payment_detail.html" type="button" class="btn btn-danger" id="donate">Donate</a> 
-        </div>
-      </section>
-
+      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   </body>
